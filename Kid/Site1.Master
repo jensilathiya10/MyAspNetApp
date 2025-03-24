@@ -1,0 +1,179 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="Kid.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>KidClass Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css" />
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid bg-light position-relative shadow">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+
+                <asp:HyperLink ID="HyperLink12" runat="server" CssClass="navbar-brand font-weight-bold text-primary text-center" NavigateUrl="~/WebForm1.aspx" Style="font-size: 50px; color: #17A2B8;">
+                  <span  style="color: #17A2B8; font-size: 50px; font-family: cursive;">KidClass</span>
+                </asp:HyperLink>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav font-weight-bold mx-auto py-0">
+                        <asp:HyperLink runat="server" NavigateUrl="~/WebForm1.aspx" CssClass="nav-item nav-link active" Font-Size="15px" ForeColor="#17A2B8">Home</asp:HyperLink>
+                        <asp:HyperLink runat="server" NavigateUrl="~/about.aspx" CssClass="nav-item nav-link" Font-Size="15px" ForeColor="#17A2B8">About</asp:HyperLink>
+                        <asp:HyperLink runat="server" NavigateUrl="~/classes.aspx" CssClass="nav-item nav-link" Font-Size="15px" ForeColor="#17A2B8">Classes</asp:HyperLink>
+                        <asp:HyperLink runat="server" NavigateUrl="~/teacher.aspx" CssClass="nav-item nav-link" Font-Size="15px" ForeColor="#17A2B8">Teachers</asp:HyperLink>
+                        <asp:HyperLink runat="server" NavigateUrl="~/gallery.aspx" CssClass="nav-item nav-link" Font-Size="15px" ForeColor="#17A2B8">Gallery</asp:HyperLink>
+                        <asp:HyperLink runat="server" NavigateUrl="~/blog.aspx" CssClass="nav-item nav-link" Font-Size="15px" ForeColor="#17A2B8">Blog</asp:HyperLink>
+                        <asp:HyperLink runat="server" NavigateUrl="~/contact.aspx" CssClass="nav-item nav-link" Font-Size="15px" ForeColor="#17A2B8">Contact</asp:HyperLink>
+                        <asp:HyperLink runat="server" NavigateUrl="~/activeclass.aspx" CssClass="nav-item nav-link" Font-Size="15px" ForeColor="#17A2B8">Active Class</asp:HyperLink>
+                        <!-- Add other links here -->
+                    </div>
+
+                    <asp:HyperLink ID="login_logout" runat="server" CssClass="btn btn-outline-primary rounded-circle text-center mr-2 px-0 " NavigateUrl="~/login.aspx" Style="width: 80px; height: 38px">
+                        <asp:Label ID="Label2" runat="server" Text="Login"></asp:Label> 
+                    </asp:HyperLink>
+                    <asp:LinkButton runat="server" CssClass="btn btn-primary px-4" PostBackUrl="~/join.aspx">Join Class</asp:LinkButton>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div
+            class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+
+                    <asp:HyperLink ID="HyperLink11" runat="server" CssClass="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" NavigateUrl="~/WebForm1.aspx" Style="font-size: 40px; line-height: 40px">
+                <span  style="color: #fff; font-size: 50px; font-family: cursive;">KidClass</span>
+                    </asp:HyperLink>
+                    <br />
+                    <asp:Label ID="Label1" runat="server" Text="  Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea
+            dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr
+            stet diam duo eos rebum ipsum diam ipsum elitr."></asp:Label>
+                    <div class="d-flex justify-content-start mt-4">
+                        <asp:HyperLink ID="HyperLink7" runat="server" CssClass="btn btn-outline-primary rounded-circle text-center mr-2 px-0" NavigateUrl="#" Style="width: 38px; height: 38px">
+                <i class="fab fa-twitter"></i>
+                        </asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink8" runat="server" CssClass="btn btn-outline-primary rounded-circle text-center mr-2 px-0" NavigateUrl="#" Style="width: 38px; height: 38px">
+                <i class="fab fa-facebook-f"></i>
+                        </asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink9" runat="server" CssClass="btn btn-outline-primary rounded-circle text-center mr-2 px-0" NavigateUrl="#" Style="width: 38px; height: 38px">
+                <i class="fab fa-linkedin-in"></i>
+                        </asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink10" runat="server" CssClass="btn btn-outline-primary rounded-circle text-center mr-2 px-0" NavigateUrl="#" Style="width: 38px; height: 38px">
+              <i class="fab fa-instagram"></i>
+                        </asp:HyperLink>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Get In Touch</h3>
+                    <div class="d-flex">
+                        <h4 class="fa fa-map-marker-alt text-primary"></h4>
+                        <div class="pl-3">
+                            <h6 class="text-white">Address</h6>
+                            <p>123 Street, New York, USA</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h4 class="fa fa-envelope text-primary"></h4>
+                        <div class="pl-3">
+                            <h6 class="text-white">Email</h6>
+                            <p>info@example.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h4 class="fa fa-phone-alt text-primary"></h4>
+                        <div class="pl-3">
+                            <h5 class="text-white">Phone</h5>
+                            <p>+012 345 67890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-primary mb-4">Quick Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="text-white mb-2" NavigateUrl="~/WebForm1.aspx">
+            <i class="fa fa-angle-right mr-2"></i>Home
+                        </asp:HyperLink>
+
+                        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="text-white mb-2" NavigateUrl="~/about.aspx">
+            <i class="fa fa-angle-right mr-2"></i>About
+                        </asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink3" runat="server" CssClass="text-white mb-2" NavigateUrl="~/classes.aspx">
+            <i class="fa fa-angle-right mr-2"></i>Our Classes
+                        </asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink6" runat="server" CssClass="text-white mb-2" NavigateUrl="~/teacher.aspx">
+            <i class="fa fa-angle-right mr-2"></i>Our Teacher
+                        </asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink5" runat="server" CssClass="text-white mb-2" NavigateUrl="~/blog.aspx">
+            <i class="fa fa-angle-right mr-2"></i>Our Blog
+                        </asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink4" runat="server" CssClass="text-white mb-2" NavigateUrl="~/contact.aspx">
+            <i class="fa fa-angle-right mr-2"></i>Contact Us
+                        </asp:HyperLink>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-primary mb-4">Newsletter</h4>
+                    <form>
+                        <div class="form-group">
+
+                            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control border-0 py-4" placeholder="Your Name" required="required"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control border-0 py-4" placeholder="Your Email" required="required"></asp:TextBox>
+
+                        </div>
+                        <div>
+
+
+                            <asp:LinkButton runat="server" CssClass="btn btn-primary btn-block border-0 py-3" OnClick="Unnamed9_Click">   Submit Now</asp:LinkButton>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div
+                class="container-fluid pt-5"
+                style="border-top: 1px solid rgba(23, 162, 184, 0.2);">
+                <p class="m-0 text-center text-white">
+                    &copy;
+            <asp:HyperLink ID="HyperLink13" runat="server" CssClass="text-primary font-weight-bold" NavigateUrl="~/WebForm1.aspx">KidClass</asp:HyperLink>
+
+                    All Rights Reserved.
+          Designed by
+                     <asp:HyperLink ID="HyperLink14" runat="server" CssClass="text-primary font-weight-bold" NavigateUrl="~/WebForm1.aspx">KidClass</asp:HyperLink>
+
+                    <br />
+                    Distributed By:
+                     <asp:HyperLink ID="HyperLink15" runat="server" CssClass="text-primary font-weight-bold" NavigateUrl="~/">Me</asp:HyperLink>
+
+                </p>
+            </div>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
