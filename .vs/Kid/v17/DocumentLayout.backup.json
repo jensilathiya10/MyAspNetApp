@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\projects_jensi\\Kid\\Kid\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC7ECD0F-EB77-45EF-957B-97BC6B1D89C4}|Kid\\Kid.vbproj|D:\\projects_jensi\\Kid\\Kid\\kid\\login.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{DC7ECD0F-EB77-45EF-957B-97BC6B1D89C4}|Kid\\Kid.vbproj|d:\\projects_jensi\\kid\\kid\\kid\\login.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{DC7ECD0F-EB77-45EF-957B-97BC6B1D89C4}|Kid\\Kid.vbproj|solutionrelative:kid\\login.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC7ECD0F-EB77-45EF-957B-97BC6B1D89C4}|Kid\\Kid.vbproj|d:\\projects_jensi\\kid\\kid\\kid\\admin\\students.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{DC7ECD0F-EB77-45EF-957B-97BC6B1D89C4}|Kid\\Kid.vbproj|D:\\projects_jensi\\Kid\\Kid\\kid\\admin\\students.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{DC7ECD0F-EB77-45EF-957B-97BC6B1D89C4}|Kid\\Kid.vbproj|solutionrelative:kid\\admin\\students.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -42,8 +42,7 @@
               "RelativeToolTip": "Kid\\Admin\\students.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-05T08:53:37.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T08:53:37.83Z"
             },
             {
               "$type": "Document",
